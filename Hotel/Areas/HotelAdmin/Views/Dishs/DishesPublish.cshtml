@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "DishesPublish";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+<link href="~/CSS/Dishes.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/validation-min.js"></script>
+<script src="~/Scripts/uploadPreview.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#DishImg").uploadPreview({ Img: "imghead", width: 302, Height: 227 })
+    });
+</script>
+
+
+
+@{
+    
+    List<Models.DishCategory> objlist = new HotelBLL.DishMananger().GetALL();
+    int categoryId = Convert.ToInt32(Request.QueryString["categoryId"]);
+    SelectList list = new SelectList(objlist, "CategoryId", "CategoryName", Request.QueryString["categoryId"] != null ? objlist[categoryId - 1].CategoryId : objlist[0].CategoryId);
+}
+
+@{
+    if (Request.QueryString["dishId"] != null)
+    {
+       
+        Models.Dishes objdish = new HotelBLL.DishMananger().GetDishById(Request.QueryString["dishId"]);
+        using (Html.BeginForm("DoAdd", "Dishs", FormMethod.Post, new { enctype = "multipart/form-data", id = "mainForm", name = "mainForm" }))
+        {
+            @Html.Hidden("DishId", Request.QueryString["dishId"])
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish name：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("DishName", objdish.DishName, new { @class="txt"})
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish price：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("UnitPrice", objdish.UnitPrice, new { @class = "txt" })
+         <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish category：
+                </div>
+                <div class="itemcontent">
+                    @Html.DropDownList("CategoryId", list)
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish name：
+                </div>
+                <div class="itemcontent">
+                    <img id="imghead" src="~/UploadFile/@objdish.DishImg" width="302" height="227" />  
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    image:
+                </div>
+                <div class="itemcontent">
+                    <input type="file" id="DishImg" name="DishImg" />
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle" style="margin-left:50px;">
+                    <button class="btncss" type="submit" id="add" formaction="DoAdd">update dish</button>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        using (Html.BeginForm("DoAdd", "Dishs", FormMethod.Post, new { enctype = "multipart/form-data", id = "mainForm", name = "mainForm" }))
+        {
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish name：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("DishName", "", new { @class="txt"})
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish price：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("UnitPrice", "", new { @class = "txt" })
+                   <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish category：
+                </div>
+                <div class="itemcontent">
+                    @Html.DropDownList("CategoryId",list)
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    dish image：
+                </div>
+                <div class="itemcontent">
+                    <img id="imghead" src="~/CSS/Images/default.png" width="302" height="227" />  
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    image:
+                </div>
+                <div class="itemcontent">
+                    <input type="file" id="DishImg" name="DishImg" />
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle" style="margin-left:50px;">
+                    <button class="btncss" type="submit" id="add" formaction="DoAdd">add dish</button>
+                </div>
+            </div>
+        }
+    }
+}
+
+
+
+<script type="text/javascript">
+    $("#mainForm").valid([
+        { name: "DishName", isNull: "dish name can't be empty", onFocus: "please enter dish name" },
+         { name: "UnitPrice", type:"number",error:"price should be a number",isNull: "please enter a number", onFocus: "please enter a correct number" },true
+    ]);
+    $(function () {
+        $("#add").click(function () {
+            $("#mainForm").submit();
+        });
+    });
+
+</script>
+

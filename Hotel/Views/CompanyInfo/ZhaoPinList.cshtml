@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "ZhaoPinDetail";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+@model Models.Recruitment
+<link href="~/Styles/Rec.css" rel="stylesheet" />
+<div class="contentDiv">
+    <div class="item" style="margin-top: 20px;">
+        <div class="itemtitle">
+            position name：
+        </div>
+        <div class="itemcontent">
+            @Model.PostName
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            position type：
+        </div>
+        <div class="itemcontent">
+            @Model.PostType
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            working exp：
+        </div>
+        <div class="itemcontent">
+            @Model.Experience
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            requirement：
+        </div>
+        <div class="itemcontent">
+            @Model.EduBackground
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            numbers：
+        </div>
+        <div class="itemcontent">
+            @Model.RequireCount
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            publish time：
+        </div>
+        <div class="itemcontent">
+            @Model.PublishTime
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            content：
+        </div>
+        <div class="itemcontent">
+        </div>
+    </div>
+    <div class="positiondesc">
+        @Model.PostDesc
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            job type：
+        </div>
+        <div class="itemcontent">
+        </div>
+    </div>
+    <div class="positiondesc">
+        @Model.PostRequire
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            contact：
+        </div>
+        <div class="itemcontent">
+            @Model.Manager
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            contact：
+        </div>
+        <div class="itemcontent">
+            @Model.PhoneNumber
+        </div>
+    </div>
+    <div class="item">
+        <div class="itemtitle">
+            email：
+        </div>
+        <div class="itemcontent">
+            @Model.Email
+        </div>
+    </div>
+
+</div>
+@section lefttitle{
+    <div class="lefttitle">
+        title
+    </div>
+}
+@section leftcontent1{
+    <div class="content1">
+        <div class="conitem">
+            <a href="#">introduction</a>
+        </div>
+        <div class="conitem">
+            <a href="#">cultrue</a>
+        </div>
+        <div class="conitem">
+            <a href="#">honor list</a>
+        </div>
+        <div class="conitem">
+            <a href="#">awards</a>
+        </div>
+        <div class="conitem">
+            <a href="#">company story</a>
+        </div>
+    </div>
+}
+@section lefttitle2{
+    <div class="lefttitle">
+        contact
+    </div>
+}
+@section  righttitle{
+    news
+}
+
+@section leftcontent2{
+    <div class="content2">
+        <div style="padding-left: 33px; padding-right: 0px; font: 12px/18px simsun; color: #3f3b32;">
+
+        </div>
+    </div>
+}

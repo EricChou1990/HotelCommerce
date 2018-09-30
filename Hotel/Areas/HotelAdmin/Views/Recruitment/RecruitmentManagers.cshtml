@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "RecruitmentManagers";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+<div class="itemdiv">
+    <div class="bitem-title">
+        position name
+    </div>
+    <div class="bitem-title">
+        position type
+    </div>
+    <div class="bitem-title">
+        working exp
+    </div>
+    <div class="bitem-title">
+        requirement
+    </div>
+    <div class="bitem-title">
+        numbers
+    </div>
+    <div class="bitem-title">
+        location    
+    </div>
+    <div class="bitem-title" style="width: 120px;">
+        submit
+    </div>
+    @{
+        if (ViewBag.list != null)
+        {
+            foreach (Models.Recruitment item in ViewBag.list)
+            {
+                <div class="bitem">
+                @item.PostName
+            </div>
+            <div class="bitem">
+                @item.PostType
+            </div>
+            <div class="bitem">
+                @item.Experience
+            </div>
+            <div class="bitem">
+               @item.EduBackground
+            </div>
+            <div class="bitem">
+               @item.RequireCount
+            </div>
+            <div class="bitem">
+                @item.PostPlace
+            </div>
+            <div class="bitem" style="width: 120px;">
+                <a href='ModifyRecruit?postId=@item.PostId'>modify</a>&nbsp;&nbsp;
+                <a href='DelPost?postId=@item.PostId' onclick='if(confirm("delete?")==false) return false;'>delete</a>&nbsp;&nbsp;
+            </div>
+
+            }
+        }
+    }
+
+
+</div>

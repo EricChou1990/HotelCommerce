@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title></title>
+    <meta name="keywords" content="pro hotel" />
+    <meta name="description" content="your best choice！" />
+    <link href="~/Styles/MainPage.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Default.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" type="text/javascript">
+        var NowFrame = 1;
+        var MaxFrame = 2;
+        function scroll1(d1) {
+            if (Number(d1)) {
+                NowFrame = d1;               
+            }
+            for (var i = 1; i < (MaxFrame + 1) ; i++) {
+                if (NowFrame == i) {
+                    document.getElementById(NowFrame).style.display = 'block';   
+                }
+                else {
+                    document.getElementById(i).style.display = 'none';
+                }
+            }
+            {
+                if (NowFrame == MaxFrame)   
+                    NowFrame = 1;
+                else
+                    NowFrame++;
+            }
+            theTimer = setTimeout('scroll1()', 3000);   
+        }
+    </script>
+</head>
+<body onload="scroll1(1)">
+    <form id="form1">
+        <div id="container">
+            <div id="top">
+                <img src="../Images/topbg.jpg" />
+            </div>
+            <div id="nav">
+                <div id="navlink">
+                    <ul>
+                        <li>@Html.ActionLink("main", "Index", "CompanyInfo")</li>
+                        <li>@Html.ActionLink("intro", "ComDesc", "CompanyInfo")</li>
+                        <li>@Html.ActionLink("news", "NewsList", "CompanyNews")</li>
+                        <li>@Html.ActionLink("food list", "DishesShow", "CompanyDishes")</li>
+                        <li>@Html.ActionLink("environment", "Environment", "CompanyDishes")</li>
+                        <li>@Html.ActionLink("online booking", "DishesBooks", "CompanyDishes")</li>
+                        <li>@Html.ActionLink("join us", "JoinUs", "CompanyInfo")</li>
+                        <li>@Html.ActionLink("suggestion", "Suggestions", "CompanyInfo")</li>
+                        <li>@Html.ActionLink("recruitment", "ZhaoPinList", "CompanyInfo")</li>
+                        <li>@Html.ActionLink("company story", "AboutUs", "CompanyInfo")</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="topflashDiv">
+                <div id="topflashbg">
+                    <img src="../Images/topflash1.jpg" id="1" alt="" style="display: none;" />
+                    <img src="../Images/topflash2.jpg" id="2" alt="" style="display: none;" />
+                </div>
+            </div>
+            <div id="content">
+                <div id="leftDiv">
+                    <div class="lefttitle">
+                        intro
+                    </div>
+                    <div id="leftImage1">
+                        <img src="../Images/leftimage1.jpg" />
+                    </div>
+                    <div id="leftText1">
+                       choose pro hotel!
+                    </div>
+                    <div class="lefttitle">
+                       news
+                    </div>
+
+
+                    @{
+                        List<Models.News> objlist=new HotelBLL.NewsManager().GetNews(7);
+                        if (ViewBag.list != null)
+                        {
+                            foreach (Models.News item in ViewBag.list)
+                            {
+                                <div class="newslist">
+                                    <div class="newstitle">
+                                        <a href='/CompanyNews/NewsDetail?newsId=@item.NewsId'>@item.NewsTitle </a>
+                                    </div>
+                                    <div class="newsdate">
+                                        @Hotel.Models.UtilityHelper.ToShortDate(@item.PublishTime)                                    
+                                    </div>
+                                </div>
+                            }
+                        }
+
+                    }
+
+
+
+
+                </div>
+                <div id="rightDiv">
+                    <div id="righttitle1">
+                    </div>
+                    <div id="righttitle2">
+                    </div>
+                    <div id="rightrec">
+                        <div class="recimage">
+                            <img src="../Images/rec1.jpg" height="86px" width="111px" />
+                        </div>
+                        <div class="rectext">
+                           
+                        </div>
+                        <div class="recimage">
+                            <img src="../Images/rec2.jpg" height="86px" width="111px" />
+                        </div>
+                        <div class="rectext">
+                            
+                        </div>
+                    </div>
+                    <div id="resinver">
+                        <img src="../Images/huanjing1.jpg" style="display: none;" id="div1" border="0" />
+                        <img src="../Images/huanjing2.jpg" style="display: none;" id="div2" border="0" />
+                        <img src="../Images/huanjing3.jpg" style="display: none;" id="div3" border="0" />
+                        <img src="../Images/huanjing4.jpg" style="display: none;" id="div4" border="0" />
+                    </div>
+                    <div id="rightScorll">
+                        <div class="zhaopaidiv">
+                            <div class="zhaopai">
+                                <img src="../Images/zhaopai1.jpg" height="90px" width="118px" />
+                            </div>
+                            <div class="zhaopainame">
+                                NO.1
+                            </div>
+                        </div>
+                        <div class="zhaopaidiv">
+                            <div class="zhaopai">
+                                <img src="../Images/zhaopai2.jpg" height="90px" width="118px" />
+                            </div>
+                            <div class="zhaopainame">
+                                NO.2
+                            </div>
+                        </div>
+                        <div class="zhaopaidiv">
+                            <div class="zhaopai">
+                                <img src="../Images/zhaopai3.jpg" height="90px" width="118px" />
+                            </div>
+                            <div class="zhaopainame">
+                                NO.3
+                            </div>
+                        </div>
+                        <div class="zhaopaidiv">
+                            <div class="zhaopai">
+                                <img src="../Images/zhaopai4.jpg" height="90" width="118" />
+                            </div>
+                            <div class="zhaopainame">
+                               NO.4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footercontent">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">join us</a></li>
+                        <li><a href="#">suggestion</a></li>
+                        <li><a href="#">company story</a></li>
+                    </ul>
+                </div>
+                <div id="bq">
+                     Copyright(C)2010-2020
+                </div>
+            </div>
+            <div id="footerbottom">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+<script language="JavaScript" type="text/javascript">
+    show();
+    var NowFrame = 1;
+    var MaxFrame = 4;
+    function show(d1) {
+        if (Number(d1)) {
+            clearTimeout(theTimer);  
+            NowFrame = d1;                
+        }
+        for (var i = 1; i < (MaxFrame + 1) ; i++) {
+            if (i == NowFrame)
+                document.getElementById('div' + NowFrame).style.display = '';  
+            else
+                document.getElementById('div' + i).style.display = 'none';    
+        }
+        {
+            if (NowFrame == MaxFrame)   
+                NowFrame = 1;
+            else
+                NowFrame++;
+        }
+        theTimer = setTimeout('show()', 3000);   
+
+</script>

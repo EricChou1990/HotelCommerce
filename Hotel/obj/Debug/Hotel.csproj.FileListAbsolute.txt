@@ -1,0 +1,166 @@
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Hotel.dll.config
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Hotel.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Hotel.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Antlr3.Runtime.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\EntityFramework.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\HotelBLL.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Microsoft.Web.Infrastructure.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Models.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Newtonsoft.Json.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Net.Http.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Net.Http.Formatting.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Net.Http.WebRequest.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Http.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Http.WebHost.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Mvc.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Optimization.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Providers.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Razor.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.WebPages.Deployment.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.WebPages.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.WebPages.Razor.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\WebGrease.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\HotelBLL.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Models.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\EntityFramework.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\Newtonsoft.Json.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Net.Http.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Net.Http.Formatting.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Net.Http.WebRequest.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Http.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Http.WebHost.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Mvc.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.Razor.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.WebPages.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.WebPages.Deployment.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\System.Web.WebPages.Razor.xml
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\EntityFramework.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.Http.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.Mvc.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.Optimization.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.Providers.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.Razor.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\obj\Debug\Hotel.csprojResolveAssemblyReference.cache
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\obj\Debug\Hotel.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\obj\Debug\Hotel.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\HotelDAL.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\HotelDAL.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\Hotel\bin\MvcPager.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Hotel.dll.config
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Hotel.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Hotel.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Antlr3.Runtime.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\EntityFramework.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\HotelBLL.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Microsoft.Web.Infrastructure.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Models.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Newtonsoft.Json.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Net.Http.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Net.Http.Formatting.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Net.Http.WebRequest.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Http.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Http.WebHost.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Mvc.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Optimization.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Providers.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Razor.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.WebPages.Deployment.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.WebPages.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.WebPages.Razor.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\WebGrease.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\HotelDAL.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\HotelBLL.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Models.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\EntityFramework.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\Newtonsoft.Json.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Net.Http.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Net.Http.Formatting.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Net.Http.WebRequest.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Http.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Http.WebHost.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Mvc.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.Razor.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.WebPages.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.WebPages.Deployment.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\System.Web.WebPages.Razor.xml
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\HotelDAL.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\EntityFramework.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.Http.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.Optimization.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.Providers.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\obj\Debug\Hotel.csprojResolveAssemblyReference.cache
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\obj\Debug\Hotel.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\Hotel\obj\Debug\Hotel.pdb
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Hotel.dll.config
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Hotel.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Hotel.pdb
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\HotelBLL.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Models.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Net.Http.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Net.Http.WebRequest.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Http.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Providers.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\WebGrease.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\HotelDAL.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\HotelBLL.pdb
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Models.pdb
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Net.Http.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Net.Http.WebRequest.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Http.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\HotelDAL.pdb
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.Providers.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\obj\Debug\Hotel.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\obj\Debug\Hotel.dll
+C:\Users\Administrator\Desktop\.NET PROJECT\HotlePro\Hotel\obj\Debug\Hotel.pdb

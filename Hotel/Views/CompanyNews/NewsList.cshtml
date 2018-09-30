@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "NewsList";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+<link href="~/Styles/News.css" rel="stylesheet" />
+
+@section leftcontent1{
+        <div class="content1">
+    <div class="conitem">
+        <a href="#">intro</a>
+    </div>
+    <div class="conitem">
+        <a href="#">story</a>
+    </div>
+    <div class="conitem">
+        <a href="#">honor</a>
+    </div>
+    <div class="conitem">
+        <a href="#">award</a>
+    </div>
+    <div class="conitem">
+        <a href="#">join us</a>
+    </div>
+</div>
+    }
+@section lefttitle2{
+        <div class="lefttitle">
+    contact us
+</div>
+    }
+@section  righttitle{
+    news
+    }
+   
+
+
+
+<div class="contentDiv">
+
+
+    @{
+        List<Models.News> objlist=new HotelBLL.NewsManager().GetNews(10);
+        if (objlist != null&&objlist.Count>0)
+        {
+            foreach (Models.News item in objlist)
+            {
+              <div id="nlistdiv">                       
+                            <div class="newsItem">
+                                <div class="newtitle">                                 
+                                    <a href='NewsDetail?newsId=@item.NewsId&#am'>
+                                        @item.NewsTitle
+                                    </a>
+</div>
+                                <div class="newsdate">
+                                    @Hotel.Models.UtilityHelper.ToShortDate(item.PublishTime)                                  
+                                </div>
+                            </div>
+                          
+                    </div>
+            }
+        }
+
+    }
+
+    </div>
+
+
+

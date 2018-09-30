@@ -1,0 +1,57 @@
+﻿@model Models.News
+
+@{
+    ViewBag.Title = "NewsDetail";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+<link href="~/Styles/News.css" rel="stylesheet" />
+<link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    function changeFontSize(fontSize) {       
+        
+        var divContent = document.getElementById("contents");
+        divContent.style.fontSize = fontSize;
+        
+    }
+</script>
+@section lefttitle{
+    <div class="lefttitle">
+        title
+</div>
+    }
+@section leftcontent1{
+    <div class="content1">
+    <div class="conitem">
+        <a href="#">intro</a>
+    </div>
+    <div class="conitem">
+        <a href="#">cultrue</a>
+    </div>
+    <div class="conitem">
+        <a href="#">honor</a>
+    </div>
+    <div class="conitem">
+        <a href="#">award</a>
+    </div>
+    <div class="conitem">
+        <a href="#">story</a>
+    </div>
+</div>
+    }
+@section righttitle{
+       news
+    }
+
+<div class="newstitle" id="am">
+  @Model.NewsTitle
+</div>
+<div class="newsdesc">
+   publish time：@Model.PublishTime&nbsp;&nbsp; word：【<a href="javascript:void(0)" onclick="changeFontSize('20px')">big</a>】【<a href="javascript:void(0)" onclick="changeFontSize('16px')">medium</a>】【<a href="javascript:void(0)" onclick="changeFontSize('12px')">small</a>】
+</div>
+<div class="newscontent" id="contents" style="font-size:14px;">
+ @Html.Raw(Model.NewsContents)
+</div>
+
+
+
+

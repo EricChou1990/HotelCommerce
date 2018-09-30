@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "DishesPublish";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+<link href="~/CSS/Dishes.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/validation-min.js"></script>
+<script src="~/Scripts/uploadPreview.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#DishImg").uploadPreview({ Img: "imghead", width: 302, Height: 227 })
+    });
+</script>
+
+
+
+@{
+    //下拉列表初始化
+    List<Models.DishCategory> objlist = new HotelBLL.DishMananger().GetALL();
+    int categoryId = Convert.ToInt32(Request.QueryString["categoryId"]);
+    SelectList list = new SelectList(objlist, "CategoryId", "CategoryName", Request.QueryString["categoryId"] != null ? objlist[categoryId - 1].CategoryId : objlist[0].CategoryId);
+}
+
+@{
+    if (Request.QueryString["dishId"] != null)
+    {
+        //调用BLL查询当前对象
+        Models.Dishes objdish = new HotelBLL.DishMananger().GetDishById(Request.QueryString["dishId"]);
+        using (Html.BeginForm("DoAdd", "Dishs", FormMethod.Post, new { enctype = "multipart/form-data", id = "mainForm", name = "mainForm" }))
+        {
+            @Html.Hidden("DishId", Request.QueryString["dishId"])
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品名称：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("DishName", objdish.DishName, new { @class="txt"})
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品价格：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("UnitPrice", objdish.UnitPrice, new { @class = "txt" })
+         <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品分类：
+                </div>
+                <div class="itemcontent">
+                    @Html.DropDownList("CategoryId", list)
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品图片：
+                </div>
+                <div class="itemcontent">
+                    <img id="imghead" src="~/UploadFile/@objdish.DishImg" width="302" height="227" />  （要求图片必须小于2M）
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    要上传的图片:
+                </div>
+                <div class="itemcontent">
+                    <input type="file" id="DishImg" name="DishImg" />
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle" style="margin-left:50px;">
+                    <button class="btncss" type="submit" id="add" formaction="DoAdd">修改菜品</button>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        using (Html.BeginForm("DoAdd", "Dishs", FormMethod.Post, new { enctype = "multipart/form-data", id = "mainForm", name = "mainForm" }))
+        {
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品名称：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("DishName", "", new { @class="txt"})
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品价格：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("UnitPrice", "", new { @class = "txt" })
+                   <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品分类：
+                </div>
+                <div class="itemcontent">
+                    @Html.DropDownList("CategoryId",list)
+                    <span style="color:red">*</span>
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    菜品图片：
+                </div>
+                <div class="itemcontent">
+                    <img id="imghead" src="~/CSS/Images/default.png" width="302" height="227" />  （要求图片必须小于2M）
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle">
+                    要上传的图片:
+                </div>
+                <div class="itemcontent">
+                    <input type="file" id="DishImg" name="DishImg" />
+                </div>
+            </div>
+            <div class="txtItemdiv">
+                <div class="itemtitle" style="margin-left:50px;">
+                    <button class="btncss" type="submit" id="add" formaction="DoAdd">新增菜品</button>
+                </div>
+            </div>
+        }
+    }
+}
+
+
+
+<script type="text/javascript">
+    $("#mainForm").valid([
+        { name: "DishName", isNull: "菜品名称不能为空", onFocus: "请填写菜品名称" },
+         { name: "UnitPrice", type:"number",error:"菜品价格必须为整数",isNull: "请填写菜品价格", onFocus: "请填写正确的菜品价格" },true
+    ]);
+    $(function () {
+        $("#add").click(function () {
+            $("#mainForm").submit();
+        });
+    });
+
+</script>
+

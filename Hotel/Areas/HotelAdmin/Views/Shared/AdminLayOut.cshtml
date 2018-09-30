@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta charset="utf-8" />
+    <title> admin management system</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/CSS/AdminCss.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+        </div>
+        <div id="nav">
+            <div id="navlink">
+                <ul>
+                    <li><a href="~/HotelAdmin/SysAdmin/AdminMain">main page</a></li>
+                    <li><a href="~/HotelAdmin/Dishs/DishesPublish">add dish</a></li>
+                    <li><a href="~/HotelAdmin/Dishs/DishesManager">manange dish</a></li>
+                    <li><a href="~/HotelAdmin/HotelNews/NewsPublish">publish news</a></li>
+                    <li><a href="~/HotelAdmin/HotelNews/NewManagers">manange news</a></li>
+                    <li><a href="~/HotelAdmin/Book/BookManagers">booking manangement</a></li>
+                    <li><a href="~/HotelAdmin/SysAdmin/SuggestionList">suggestion</a></li>
+                    <li><a href="~/HotelAdmin/Recruitment/RecruitmentPublish">publish recruitment post</a></li>
+                    <li><a href="~/HotelAdmin/Recruitment/RecruitmentManagers">manange recruitment post</a></li>
+                    <li><a class="navLast" href="~/HotelAdmin/SysAdmin/ExtSys">exit sys</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+          @RenderBody()
+        </div>
+        <div id="footer">
+            <div id="bq">
+                <a target="_blank" href="/CompanyDishes/Index">[main page]</a>&nbsp;&nbsp; Copyright(C)2010-2020
+                Pro Hotel&nbsp;&nbsp;&nbsp;[current user:@Session["currentAdmin"]]
+            </div>
+        </div>
+    </div>
+</body>
+</html>

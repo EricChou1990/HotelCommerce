@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "NewManagers";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+@model Hotel.Models.Common
+@using Webdiyer.WebControls.Mvc;
+
+<link href="~/Styles/style.css" rel="stylesheet" />
+    <div class="itemdiv">
+        <div class="newsitem-title-1">
+            publish time
+        </div>
+        <div class="newsitem-title-2">
+            news title
+        </div>
+        <div class="newsitem-title-2">
+            news category
+        </div>
+        <div class="newsitem-title-3" style="width: 110px;">
+            add
+        </div>
+
+        @{
+
+            foreach (var item in Model.objNewsModel)
+            {
+                <div class="newsitem-title-1">
+                 
+                @Hotel.Models.UtilityHelper.ToShortDate(item.PublishTime)                       
+
+                    </div>
+                    <div class="newsitem-title-2">
+                        <a href='/CompanyNews/NewsDetail?newsId=@item.NewsId' target="_blank">
+                           @item.NewsTitle
+                        </a>
+                    </div>
+                    <div class="newsitem-title-2">
+                       @{
+                string categoryName = new HotelBLL.NewsManager().GetCategoryName(item.CategoryId);
+                       }
+                        @categoryName
+                    </div>
+                    <div class="newsitem-title-3" style="width: 110px;">
+                        @Html.ActionLink("modify", "NewsUpDate", new { newsId = item.NewsId, categoryId = item.CategoryId }, new { @class = "" })
+                       @Html.ActionLink("delete", "DoDelNew", new { newsId = item.NewsId }, new { onclick = "return confirm('delete?')" })                    
+                    </div>
+            }
+        }
+
+
+
+
+    </div>
+
+<div class="mvc_pager">
+    @Html.Pager(Model.objNewsModel, new PagerOptions
+    {
+        PageIndexParameterName = "id",
+        ShowPageIndexBox = true,
+        FirstPageText = "first page",
+        PrevPageText = "previous",
+        NextPageText = "next",
+        LastPageText = "last"
+    })
+    <div class="thispagethis">
+        @Html.Raw("total:")@Model.objNewsModel.TotalPageCount @Html.Raw("page,")
+        @Model.objNewsModel.CurrentPageIndex@Html.Raw("/")@Model.objNewsModel.TotalPageCount@Html.Raw("page")
+    </div>
+
+
+
+

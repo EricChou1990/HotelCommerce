@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Suggestions";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+@model Models.Suggestion
+
+<link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@section lefttitle{
+    <div class="lefttitle">
+        栏目导航
+    </div>
+}
+
+@section leftcontent1{
+    <div class="content1">
+        <div class="conitem">
+            <a href="#">公司介绍</a>
+        </div>
+        <div class="conitem">
+            <a href="#">企业文化</a>
+        </div>
+        <div class="conitem">
+            <a href="#">企业荣誉</a>
+        </div>
+        <div class="conitem">
+            <a href="#">企业荣誉</a>
+        </div>
+        <div class="conitem">
+            <a href="#">发展历程</a>
+        </div>
+    </div>
+}
+@section lefttitle2{
+
+    <div class="lefttitle">
+        联系方式
+    </div>
+}
+@section leftcontent2{
+    <div class="content2">
+        <div style="padding-left: 33px; padding-right: 0px; font: 12px/18px simsun; color: #3f3b32;">
+            地&nbsp; 址：杭州市莫山南路888号<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 汽车南站旁<br />
+            电&nbsp; 话：0571-98888888<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0571-98999999<br />
+            传&nbsp; 真：0571-98777777<br />
+            邮&nbsp; 箱：boss@mail.com
+        </div>
+    </div>
+}
+
+@section righttitle{
+    您现在所在的位置:中式餐厅酒店>投诉建议
+}
+@{
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+}
+<script type="text/javascript">
+    function succ(data) {
+        alert(data);
+    }
+</script>
+@using (Ajax.BeginForm("DoSugg", "CompanyInfo", new AjaxOptions { OnSuccess = "succ", Confirm = "确认要提交吗?" })) 
+{
+
+    <div class="cdiv">
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>客户姓名：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("CustomerName", "", new { @class="txt"})
+              @Html.ValidationMessage("CustomerName")
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>您的消费情况：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("ConsumeDesc", "", new { @class = "txt" })
+                @Html.ValidationMessage("ConsumeDesc")
+              
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span> 联系电话：
+            </div>
+
+            <div class="itemcontent">
+                @Html.TextBox("PhoneNumber", "", new { @class = "txt" })
+                @Html.ValidationMessage("PhoneNumber")             
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>电子邮件：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("Email", "", new { @class = "txt" })
+                @Html.ValidationMessage("Email")                
+             
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span> 投诉建议：
+            </div>
+            <div class="itemcontent">
+                @Html.TextArea("SuggestionDesc", "", new { @class = "txt" })
+                @Html.ValidationMessage("SuggestionDesc")                
+             
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>   验证码：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("ValidateCode", "", new { @class = "txt" })  
+                <img alt="验证码图片" id="ImgValidateCode" title="看不清？点击换一个"
+                     src="/CompanyDishes/ValidateCode" onclick="this.src=this.src+'?'" />
+              @Html.ValidationMessage("yzm")
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+            </div>
+            <div class="itemcontent">
+                <button id="btnSubmit" class="btncss">提交投诉</button>
+            </div>
+        </div>
+    </div>
+}

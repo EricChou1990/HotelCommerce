@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "NewManagers";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+@model Hotel.Models.Common
+@using Webdiyer.WebControls.Mvc;
+
+<link href="~/Styles/style.css" rel="stylesheet" />
+    <div class="itemdiv">
+        <div class="newsitem-title-1">
+            发布时间
+        </div>
+        <div class="newsitem-title-2">
+            新闻标题
+        </div>
+        <div class="newsitem-title-2">
+            新闻分类
+        </div>
+        <div class="newsitem-title-3" style="width: 110px;">
+            操作
+        </div>
+
+        @{
+
+            foreach (var item in Model.objNewsModel)
+            {
+                <div class="newsitem-title-1">
+                 
+                @Hotel.Models.UtilityHelper.ToShortDate(item.PublishTime)                       
+
+                    </div>
+                    <div class="newsitem-title-2">
+                        <a href='/CompanyNews/NewsDetail?newsId=@item.NewsId' target="_blank">
+                           @item.NewsTitle
+                        </a>
+                    </div>
+                    <div class="newsitem-title-2">
+                       @{
+                string categoryName = new HotelBLL.NewsManager().GetCategoryName(item.CategoryId);
+                       }
+                        @categoryName
+                    </div>
+                    <div class="newsitem-title-3" style="width: 110px;">
+                        @Html.ActionLink("修改", "NewsUpDate", new { newsId = item.NewsId, categoryId = item.CategoryId }, new { @class = "" })
+                       @Html.ActionLink("删除", "DoDelNew", new { newsId = item.NewsId }, new { onclick = "return confirm('确定要删除吗?')" })                    
+                    </div>
+            }
+        }
+
+
+
+
+    </div>
+
+<div class="mvc_pager">
+    @Html.Pager(Model.objNewsModel, new PagerOptions
+    {
+        PageIndexParameterName = "id",
+        ShowPageIndexBox = true,
+        FirstPageText = "首页",
+        PrevPageText = "上一页",
+        NextPageText = "下一页",
+        LastPageText = "末页"
+    })
+    <div class="thispagethis">
+        @Html.Raw("共:")@Model.objNewsModel.TotalPageCount @Html.Raw("页,")
+        @Model.objNewsModel.CurrentPageIndex@Html.Raw("/")@Model.objNewsModel.TotalPageCount@Html.Raw("页")
+    </div>
+
+
+
+

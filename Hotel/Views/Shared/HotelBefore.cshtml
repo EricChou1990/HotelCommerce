@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+        <title></title>
+    <link rel="Shortcut Icon" href="~/Styles/Images/clogo.ico" />
+    <link href="~/Styles/MainPage.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/MasterPage.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" type="text/javascript">
+        var NowFrame = 1;
+        var MaxFrame = 2;
+        function scroll1(d1) {
+            if (Number(d1)) {
+                NowFrame = d1;                
+            }
+            for (var i = 1; i < (MaxFrame + 1) ; i++) {
+                if (NowFrame == i) {
+                    document.getElementById(NowFrame).style.display = 'block';   
+                }
+                else {
+                    document.getElementById(i).style.display = 'none';
+                }
+            }
+            {
+                if (NowFrame == MaxFrame)   
+                    NowFrame = 1;
+                else
+                    NowFrame++;
+            }
+            theTimer = setTimeout('scroll1()', 3000);  
+        }
+    </script>
+</head>
+<body onload="scroll1(1)">
+    <div id="container">
+        <div id="top">
+        </div>
+        <div id="nav">
+            <div id="navlink">
+                <ul>
+                    <li>@Html.ActionLink("main", "Index", "CompanyInfo")</li>
+                    <li>@Html.ActionLink("intro", "ComDesc", "CompanyInfo")</li>
+                    <li>@Html.ActionLink("news", "NewsList", "CompanyNews")</li>
+                    <li>@Html.ActionLink("food list", "DishesShow", "CompanyDishes")</li>
+                    <li>@Html.ActionLink("environment", "Environment", "CompanyDishes")</li>
+                    <li>@Html.ActionLink("online booking", "DishesBooks", "CompanyDishes")</li>
+                    <li>@Html.ActionLink("join us", "JoinUs", "CompanyInfo")</li>
+                    <li>@Html.ActionLink("suggestion", "Suggestions", "CompanyInfo")</li>
+                    <li>@Html.ActionLink("recruitment", "ZhaoPinList", "CompanyInfo")</li>
+                    <li>@Html.ActionLink("story", "AboutUs", "CompanyInfo")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="topflashDiv">
+            <div id="topflashbg">
+                <img src="../Images/topflash1.jpg" id="1" alt="" style="display: none;" />
+                <img src="../Images/topflash2.jpg" id="2" alt="" style="display: none;" />
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="leftpage">
+                @RenderSection("lefttitle",required:false)               
+                @RenderSection("leftcontent1", required: false)
+                @RenderSection("lefttitle2", required: false)
+                @RenderSection("leftcontent2", required: false)               
+            </div>
+            <div id="rightpage">
+                <div class="righttitle">
+                    @RenderSection("righttitle",required:false)
+                </div>
+                <div class="contentDiv">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footercontent">
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">join us</a></li>
+                    <li><a href="#">suggestion list</a></li>
+                    <li><a href="#">our story</a></li>
+                </ul>
+            </div>
+            <div id="bq">
+                 Copyright(C)2010-2020 
+            </div>
+        </div>
+        <div id="footerbottom">
+        </div>
+    </div>
+
+
+</body>
+</html>

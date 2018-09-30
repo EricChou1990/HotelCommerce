@@ -1,0 +1,49 @@
+﻿@model Models.SysAdmins
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>admin login</title>
+    <link href="~/CSS/AdminCss.css" rel="stylesheet" />
+</head>
+<body>
+    @using (Html.BeginForm("LoginUser", "SysAdmin", FormMethod.Post, new { @class = "adminlogin__form "}))
+    {  
+   
+        <div id="container">
+            <div id="top">
+            </div>
+            <div id="content">
+                <div id="loginimg">
+                    <img src="~/CSS/Images/loginimg.jpg" />
+                </div>
+                <div id="logindiv">
+                    <div id="ltitle">
+                        admin login
+                    </div>
+                    <div class="litem">
+                        account：
+                        @Html.TextBox("LoginId", "",new { @class="txt"})                      
+                        @Html.ValidationMessage("LoginId")
+                    </div>
+                    <div class="litem">
+                        password：                 
+                        @Html.Password("LoginPwd", "",new { @class = "txt" })                      
+                        @Html.ValidationMessage("LoginPwd")
+                    </div>
+                    <div class="litem">
+                        <button class="btncss" id="btnlogin" type="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="bq">
+                    Pro Hotel
+                </div>
+            </div>
+        </div>
+    }
+  
+</body>
+</html>

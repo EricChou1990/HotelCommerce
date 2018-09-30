@@ -1,0 +1,83 @@
+﻿@model Hotel.Models.Common
+@using Webdiyer.WebControls.Mvc;
+@{
+    ViewBag.Title = "DishesManager";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+<link href="~/CSS/Dishes.css" rel="stylesheet" />
+<link href="~/Styles/style.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".delDish").click(function () {
+            if (!confirm("确定删除吗?")) return;
+            var dishId = $(this).attr("name");
+            $.post("/Dishs/DelDish", { disId: dishId }, function (data, status) {
+                if (status == "success") {
+                    $("#" + dishId).remove();
+                    location.href = "DishesManager";
+                }
+
+            });
+
+        });
+    });
+</script>
+@{
+    //下拉列表初始化
+    List<Models.DishCategory> objlist = new HotelBLL.DishMananger().GetALL();   
+    SelectList list = new SelectList(objlist, "CategoryId", "CategoryName", objlist[0].CategoryId);
+}
+<form method="post" action="DishesManager">
+    <div id="dishcategory">
+        菜品分类：
+        @Html.DropDownList("CategoryId", list)
+        &nbsp;<button type="submit">提交查询</button>
+    </div>
+</form>
+<div id="dishlistdiv">
+    @{
+        foreach (var item in Model.Dishes)
+        {
+          <div class="dishlist-item" id="@item.DishId">
+        <div class="dishlist-img">
+            <img src="~/UploadFile/@item.DishImg" alt="" />
+        </div>
+        <div class="dishlist-txt">
+            菜品名称：@item.DishName
+        </div>
+        <div class="dishlist-txt">
+            @{
+                string cateName=new HotelBLL.DishMananger().CategoryName(item.CategoryId);
+            }
+            菜品分类：@cateName
+        </div>
+        <div class="dishlist-txt">
+            菜品价格：@item.UnitPrice
+        </div>
+        <div class="dishlist-txt">
+            @Html.ActionLink("修改", "DishesPublish", "Dishs", new { dishId = item.DishId, categoryId=item.CategoryId }, new { @class = "" })  
+                  <a href="javascript:void()"  name="@item.DishId" class="delDish">删除</a>&nbsp;&nbsp;
+        </div>
+    </div>
+        }
+    }
+    
+
+  
+</div>
+<div class="mvc_pager">
+    @Html.Pager(Model.Dishes, new PagerOptions
+    {
+        PageIndexParameterName = "id",
+        ShowPageIndexBox = true,
+        FirstPageText = "首页",
+        PrevPageText = "上一页",
+        NextPageText = "下一页",
+        LastPageText = "末页"
+    })
+    <div class="thispagethis">
+        @Html.Raw("共:")@Model.Dishes.TotalPageCount @Html.Raw("页,")
+        @Model.Dishes.CurrentPageIndex@Html.Raw("/")@Model.Dishes.TotalPageCount@Html.Raw("页")
+    </div>  
+</div>

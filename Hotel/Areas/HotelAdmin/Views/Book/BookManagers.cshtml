@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "BookManagers";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+
+<div class="itemdiv">
+    <div class="book-title">
+        hotel name
+    </div>
+    <div class="book-title">
+        dinner time
+    </div>
+    <div class="book-title">
+        people
+    </div>
+    <div class="book-title">
+        type of room
+    </div>
+    <div class="book-title">
+        guset name
+    </div>
+    <div class="book-title">
+        contact number
+    </div>
+    <div class="book-title" style="width: 152px;">
+        book
+    </div>
+
+    @{
+        if (ViewBag.list != null && ((List<Models.DishBook>)(ViewBag.list)).Count > 0)
+        {
+            foreach (Models.DishBook item in ViewBag.list)
+            {
+                <div class="book-title">
+                  @item.HotelName
+                </div>
+                <div class="book-title">
+                   @item.ConsumeTime
+                </div>
+                <div class="book-title">
+                  @item.ConsumePersons 人
+                </div>
+                <div class="book-title">
+                   @item.RoomType
+                </div>
+                <div class="book-title">
+                   @item.CustomerName
+                </div>
+                <div class="book-title">
+                    @item.CustomerPhone
+                </div>
+                <div class="book-title" style="width: 152px;">
+                    <a href='DoUpdate?statId=1&BookId=@item.BookId'>confirm</a>
+                    <a href='DoUpdate?statId=-1&BookId=@item.BookId'>cancel</a>
+                    <a href='DoUpdate?statId=2&BookId=@item.BookId' onclick='if(confirm("are you sure?")==false) return false;'>delete</a>
+                </div>
+                <div class="bookdetail">
+                    <div class="book-Time">
+                        booking time： @item.BookTime
+                    </div>
+                    <div class="book-Time">
+                        email：@item.CustomerEmail
+                    </div>
+                    <div class="book-Time">
+                        status：@item.OrderStatus  &nbsp;（0：not pass&nbsp;1：pass）
+                    </div>
+                    <div class="book-comment">
+                        other requirenemt：@item.Comments
+                    </div>
+                </div>
+            }
+        }
+    }
+
+
+
+</div>

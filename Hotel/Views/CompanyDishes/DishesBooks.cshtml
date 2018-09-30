@@ -1,0 +1,260 @@
+﻿@{
+    ViewBag.Title = "DishesBooks";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+<link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+
+
+<script src="~/Scripts/jquery-1.4.1.min.js"></script>
+<script src="~/Scripts/validation-min.js"></script>
+<script src="~/ThirdFile/My97DatePicker/WdatePicker.js"></script>
+<style type="text/css">
+    .txtarea {
+        width:200px;
+        height:50px;
+    
+        }
+</style>
+@section lefttitle{
+    <div class="lefttitle">
+       dish category
+    </div>
+}
+@section leftcontent1{
+    <div class="content1">
+        <div class="conitem">
+            <a href="#">hot choice</a>
+        </div>
+        <div class="conitem">
+            <a href="#">special</a>
+        </div>
+        <div class="conitem">
+            <a href="#">newest</a>
+        </div>      
+    </div>
+}
+@section righttitle{
+    online booking
+
+}
+<div class="contentDiv">  
+    <div class="cdiv">
+        @using (Html.BeginForm("", "", FormMethod.Post, new { id = "mainForm" }))
+        {       
+            <div class="item">
+                <div class="itemtitle">
+                    hotel name：
+                </div>
+                <div class="itemcontent">
+                    <select name="HotelName">
+                        <option value="No.1">No.1</option>
+                        <option value="No.2">No.2</option>
+                        <option value="No.3">No.3</option>
+                    </select>
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    shopping：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("ConsumeTime","", new { @class="txt",@onclick="WdatePicker()"})
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    numbers：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("ConsumePersons", "", new { @class="txt"})
+                <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    room type：
+                </div>
+                <div class="itemcontent">
+                    <select name="RoomType">
+                        <option value="back">back</option>
+                        <option value="front">front</option>
+                    </select>
+                    <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    name：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("CustomerName", "", new { @class="txt"})
+                 <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    bumber：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("CustomerPhone", "", new { @class = "txt" })
+                 <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    email：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("CustomerEmail", "", new { @class = "txt" })                   
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    must know：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextArea("Comments", "", new { @class = "txtarea" })                    
+                  
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                    code：
+                </div>
+                <div class="itemcontent">
+                    @Html.TextBox("txtValidateCode", "", new { @class="txt"})                   
+                  <span>&nbsp;*</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                </div>
+                <div class="itemcontent">
+                    <img id="vCodeimg" src="/CompanyDishes/ValidateCode" />
+                    <a href="javascript:void(0)" id="refreshcode">&nbsp;another</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="itemtitle">
+                </div>
+                <div class="itemcontent">
+                    <input type="button" class="btncss" id="submitMsg" value="马上预定" />
+                </div>
+            </div>
+        } 
+    </div>
+    <div id="popdiv">
+        <div id="infodiv">
+            <div id="loadingdiv">
+                <img src="/Styles/Images/onloading.gif" />
+            </div>
+            <div class="loadinfo">
+                submiting......
+            </div>
+        </div>
+        <div id="errordiv" style="display: none; color: #FCD24B; float: left;">
+           server error
+        </div>
+        <div id="regsuccess" style="float: left; display: none;">
+            successful！&nbsp;<b>at<span id="seconds">3</span></b>&nbsp;second......
+        </div>
+    </div>
+    <div id="zzc">
+    </div>
+    <script type="text/javascript">
+        
+        $("#mainForm").valid([
+            { name: "ConsumeTime", isNull: "cam't be empty!", onFocus: "please choose your time！" },
+            { name: "ConsumePersons", type: "number", error: "cam't be empty！", isNull: "cam't be empty！", onFocus: "cam't be empty！" },
+            { name: "CustomerName", isNull: "cam't be empty！", onFocus: "cam't be empty！" },
+            { name: "CustomerPhone", type: "mobile", error: "cam't be empty！", isNull: "cam't be empty！", onFocus: "cam't be empty！" },
+            { name: "txtValidateCode", isNull: "cam't be empty!", onFocus: "cam't be empty" },
+            { name: "txtValidateCode", type: "ajax", error: "cam't be empty！", other: { url: "/CompanyDishes/ExsitsValidate" } }
+        ], true);
+        
+        $(function () {
+            $("#refreshcode").click(function () {
+                $("#txtValidateCode").val("");
+                $("#vCodeimg").attr("src", function () {
+                    return "/CompanyDishes/ValidateCode?a=" + new Date().getMilliseconds();
+                });
+            });
+        });
+        
+        $(function () {
+            $("#submitMsg").click(function () {
+                $("#mainForm").submit();
+            });
+        });
+        
+        function ajaxForm() {
+            $.ajax({
+                type: "POST",
+                timeout: 30000, 
+                url: "/CompanyDishes/DoAdd", 
+                data: $("#mainForm").serialize(), 
+                beforeSend: function () {
+                    $("#errordiv").text("服务器超时，请稍后再试！[关闭]");
+                    $("#errordiv").hide();
+                    $("#zzc").show();
+                    popupDiv("popdiv");
+                },
+                error: function () {
+                    $("#infodiv").hide();
+                    $("#errordiv").show();
+                },
+                success: function (data) {
+                    if (data == "success") {
+                        $("#infodiv").hide();
+                        $("#regsuccess").show();
+                        setInterval(MyTimer, 1000)
+                    } else {
+                        $("#infodiv").hide();
+                        $("#errordiv").text(data);
+                        $("#errordiv").show();
+                    }
+                }
+            });
+        }
+       
+        function popupDiv(div_id) {
+            var div_obj = $("#" + div_id);
+            
+            var winWidth = $(window).width();
+            var winHeight = $(window).height();
+            
+            var popHeight = div_obj.height();
+            var popWidth = div_obj.width();
+            div_obj.animate({
+                opacity: "show", left: (winWidth - popWidth) / 2,
+                top: (winHeight - popHeight) / 2 + 300, width: popWidth, height: popHeight
+            }, 300);
+            $("#infodiv").show();
+        }
+        $(function () {
+            $("#popdiv").click(function () {
+                $("#popdiv").animate({ opacity: "hide" }, 300);
+                $("#zzc").css("display", "none");
+            });
+        });
+        $(function () {
+            $("#errordiv").mouseover(function () {
+                $("#popdiv").animate({ opacity: "hide" }, 300);
+                $("#zzc").css("display", "none");
+            });
+        });
+        
+        var sec = 3;
+        function MyTimer() {
+            if (sec == 0) {
+                location = "/CompanyInfo/Index";
+            } else {
+                sec = sec - 1;
+                $("#seconds").text(sec);
+            }
+        }
+    </script>
+
+</div>

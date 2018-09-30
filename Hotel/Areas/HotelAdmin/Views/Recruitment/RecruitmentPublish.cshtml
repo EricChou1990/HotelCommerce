@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "RecruitmentPublish";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+
+<style type="text/css">
+    .txt {
+        width:80px;
+    }
+</style>
+@using (Html.BeginForm("DoRecruitment", "Recruitment", FormMethod.Post))
+{ 
+    <div class="txtContentdiv">
+        <div class="txtItemdiv">
+            position name：@Html.TextBox("PostName", "",new {@class="txt"})
+          
+            position type：
+            <select id="PostType" name="PostType">
+                <option>full time</option>
+                <option>part time</option>
+            </select>
+            working exp：
+            <select id="Experience" name="Experience">
+                <option>1 year</option>
+                <option>2 year</option>
+                <option>3 year</option>
+                <option>4 year</option>
+                <option>5 year</option>
+            </select>
+            requirement：
+            <select id="EduBackground" name="EduBackground">
+                <option>bechalor</option>
+                <option>master</option>
+                <option>phd</option>
+                <option>tafe</option>
+            </select>
+            numbers：
+            @Html.TextBox("RequireCount", "", new { @class = "txt" })        
+            location：           
+            @Html.TextBox("PostPlace", "", new { @class = "txt" })
+        </div>
+        <div class="txtItemdiv">
+            position：
+        </div>
+        <div class="txtItemdiv">
+            @Html.TextArea("PostRequire", new { cols="100", rows="10"})       
+
+        </div>
+        <div class="txtItemdiv">
+            requirement：
+        </div>
+        <div class="txtItemdiv">
+            @Html.TextArea("PostDesc",new {cols="100", rows="10"})          
+          
+        </div>
+        <div class="txtItemdiv">
+            contact：         
+            @Html.TextBox("Manager")            
+            phone：@Html.TextBox("PhoneNumber")           
+            
+            e-mail：@Html.TextBox("Email")
+        </div>
+        <div class="txtItemdiv">
+            <button class="btncss" id="btnModify" type="submit">submit</button>
+        </div>
+    </div>
+}
+    

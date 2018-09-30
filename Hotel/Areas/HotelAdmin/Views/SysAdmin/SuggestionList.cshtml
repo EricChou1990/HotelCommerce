@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "SuggestionList";
+    Layout = "~/Areas/HotelAdmin/Views/Shared/AdminLayOut.cshtml";
+}
+@model List<Models.Suggestion>
+
+<div class="itemdiv">
+    <div class="book-title">
+        Issue time
+    </div>
+    <div class="book-title">
+        Name
+    </div>
+    <div class="book-title">
+        Contact Number
+    </div>
+    <div class="book-title">
+        E-mail
+    </div>
+    <div class="book-title" style="width: 324px;">
+        Status
+    </div>
+    <div class="book-title" style="width: 100px;">
+        submit
+    </div>
+
+    @{
+        if (Model.Count > 0)
+        {
+            foreach (Models.Suggestion item in Model)
+            {
+                <div class="book-title">
+                   @item.SuggestTime
+                </div>
+                <div class="book-title">
+                   @item.CustomerName
+                </div>
+                <div class="book-title">
+                  @item.PhoneNumber
+                </div>
+                <div class="book-title">
+                   @item.Email
+                </div>
+                <div class="book-title" style="width: 324px;">
+                    @item.ConsumeDesc
+                </div>
+                <div class="book-title" style="width: 100px;">
+                    <a href='DoSugg?suggId=@item.SuggestionId'>suggestion</a>
+                </div>
+                <div class="bookdetail">
+                    <div class="book-comment">
+                       @item.SuggestionDesc
+                    </div>
+                </div>
+            }
+        }
+    }
+</div>

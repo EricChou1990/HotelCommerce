@@ -1,0 +1,18 @@
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\bin\Debug\HotelBLL.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\bin\Debug\HotelBLL.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\bin\Debug\HotelDAL.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\bin\Debug\Models.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\bin\Debug\HotelDAL.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\bin\Debug\Models.pdb
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\obj\Debug\HotelBLL.csprojResolveAssemblyReference.cache
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\obj\Debug\HotelBLL.dll
+F:\秦艳娇学习资料\17期网站开发\第五章 贯穿项目第二阶段实践\网站项目实战（一）\项目框架\HotlePro\HotelBLL\obj\Debug\HotelBLL.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\bin\Debug\HotelBLL.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\bin\Debug\HotelBLL.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\bin\Debug\HotelDAL.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\bin\Debug\Models.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\bin\Debug\HotelDAL.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\bin\Debug\Models.pdb
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\obj\Debug\HotelBLL.csprojResolveAssemblyReference.cache
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\obj\Debug\HotelBLL.dll
+E:\MVC_finalProject\【1】ASP.NET-MVC-网站项目实战（源码+资料）\1.MVC项目【完整资料】\6_网站项目完整源码和数据库\HotlePro\HotelBLL\obj\Debug\HotelBLL.pdb

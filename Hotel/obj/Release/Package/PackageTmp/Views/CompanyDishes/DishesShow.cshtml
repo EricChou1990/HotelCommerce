@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "DishesShow";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+@model Hotel.Models.Common
+@using Webdiyer.WebControls.Mvc;
+<link href="~/Styles/style.css" rel="stylesheet" />
+<link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+@section lefttitle{
+    <div class="lefttitle">
+
+        菜品分类
+
+    </div>
+}
+@section leftcontent1{
+    <div class="content1">
+
+        <div class="conitem">
+            <a href="javascript:void(0)">招牌菜品</a>
+        </div>
+        <div class="conitem">
+            <a href="javascript:void(0)">特色菜品</a>
+        </div>
+        <div class="conitem">
+            <a href="javascript:void(0)">最新菜品</a>
+        </div>
+
+    </div>
+}
+@section    lefttitle2{
+    <div class="lefttitle">
+
+        菜品搜索
+
+    </div>
+}
+@section leftcontent2{
+    <div class="content1">
+        <form action="#" method="post" name="myform">
+            <table style=" border-collapse:collapse; border:0px; padding:35px; width:200px; position:relative;left:39px;top:30px; float:left;">
+                <tr>
+                    <td>
+                        <select style=" width:155px;">
+                            <option value="value"></option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="txtSearch" style="width:150px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="~/Images/search5.gif" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+}
+@section righttitle{   
+        您现在位置:中式餐馆酒店》美食展示 
+}
+
+@{
+    foreach (Models.Dishes item in Model.Dishes)
+    {
+        <div id="dishitem">
+            <div class="ditem" style="padding:10px 9px 8px 7px">
+                <div class="dimgdiv">
+                    <img src="/UploadFile/@item.DishImg" />
+                </div>
+                <div class="dishname">
+                    @item.DishName&nbsp;￥@item.UnitPrice
+                </div>
+            </div>
+
+        </div>
+         
+    }   
+}
+<div class="mvc_pager">
+    @Html.Pager(Model.Dishes, new PagerOptions
+    {
+        PageIndexParameterName = "id",
+        ShowPageIndexBox = true,
+        FirstPageText = "首页",
+        PrevPageText = "上一页",
+        NextPageText = "下一页",
+        LastPageText = "末页"
+    })
+    <div class="thispagethis">
+        @Html.Raw("共:")@Model.Dishes.TotalPageCount @Html.Raw("页,")
+        @Model.Dishes.CurrentPageIndex@Html.Raw("/")@Model.Dishes.TotalPageCount@Html.Raw("页")
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿/* ---- mvc_pager ----  */
+.mvc_pager
+{
+    float:left;
+    width:100%;
+    display:block;
+    text-align: center;
+    margin-top: 2px;
+    font-family: Arial;
+    vertical-align: middle;
+}
+.mvc_pager a
+{
+    font-weight: bold;
+    margin: 1px 3px;
+    padding: 0.3em 0.5em 0.2em;
+    text-align: center;
+    border: #c00 1px solid;
+    line-height: 25px;
+}
+.mvc_pager a:link, .mvc_pager a:visited, .pagenextpage a:visited
+{
+    font-weight: bold;
+    margin: 1px 3px;
+    padding: 0.3em 0.5em 0.2em;
+    text-align: center;
+    background: #f66;
+    border: #c00 1px solid;
+    color: #fff;
+    line-height: 25px;
+}
+.mvc_pager a:hover
+{
+    font-weight: bold;
+    margin: 1px 3px;
+    padding: 0.3em 0.5em 0.2em;
+    text-align: center;
+    background: #f30;
+    border: #c30 1px solid;
+    color: #fff;
+    line-height: 25px;
+}
+.thispagethis
+{
+    font-weight: bold;
+    margin: 1px 3px;
+    padding: 0.3em 0.5em 0.2em;
+    text-align: center;
+    background: #b00000;
+    border: #c30 1px solid;
+    color: #fff;
+    line-height: 25px;
+}
+/* ------------ */

@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "Suggestions";
+    Layout = "~/Views/Shared/HotelBefore.cshtml";
+}
+@model Models.Suggestion
+
+<link href="~/Styles/Dishes.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+@section lefttitle{
+    <div class="lefttitle">
+       
+    </div>
+}
+
+@section leftcontent1{
+    <div class="content1">
+    <div class="conitem">
+        <a href="#">introduction</a>
+    </div>
+    <div class="conitem">
+        <a href="#">cultrue</a>
+    </div>
+    <div class="conitem">
+        <a href="#">honor list</a>
+    </div>
+    <div class="conitem">
+        <a href="#">awards</a>
+    </div>
+    <div class="conitem">
+        <a href="#">company story</a>
+    </div>
+</div>
+}
+@section lefttitle2{
+
+    <div class="lefttitle">
+        contact
+    </div>
+}
+@section leftcontent2{
+    <div class="content2">
+        <div style="padding-left: 33px; padding-right: 0px; font: 12px/18px simsun; color: #3f3b32;">
+          
+        </div>
+    </div>
+}
+
+@section righttitle{
+    suggestion
+}
+@{
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+}
+<script type="text/javascript">
+    function succ(data) {
+        alert(data);
+    }
+</script>
+@using (Ajax.BeginForm("DoSugg", "CompanyInfo", new AjaxOptions { OnSuccess = "succ", Confirm = "submit?" })) 
+{
+
+    <div class="cdiv">
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>name：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("CustomerName", "", new { @class="txt"})
+              @Html.ValidationMessage("CustomerName")
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>shopping：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("ConsumeDesc", "", new { @class = "txt" })
+                @Html.ValidationMessage("ConsumeDesc")
+              
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span> contact number：
+            </div>
+
+            <div class="itemcontent">
+                @Html.TextBox("PhoneNumber", "", new { @class = "txt" })
+                @Html.ValidationMessage("PhoneNumber")             
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>e-mail：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("Email", "", new { @class = "txt" })
+                @Html.ValidationMessage("Email")                
+             
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span> suggestion：
+            </div>
+            <div class="itemcontent">
+                @Html.TextArea("SuggestionDesc", "", new { @class = "txt" })
+                @Html.ValidationMessage("SuggestionDesc")                
+             
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+                <span>*</span>   code：
+            </div>
+            <div class="itemcontent">
+                @Html.TextBox("ValidateCode", "", new { @class = "txt" })  
+                <img alt="img" id="ImgValidateCode" title="another"
+                     src="/CompanyDishes/ValidateCode" onclick="this.src=this.src+'?'" />
+              @Html.ValidationMessage("yzm")
+            </div>
+        </div>
+        <div class="item">
+            <div class="itemtitle">
+            </div>
+            <div class="itemcontent">
+                <button id="btnSubmit" class="btncss">submit</button>
+            </div>
+        </div>
+    </div>
+}
